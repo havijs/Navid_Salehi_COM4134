@@ -1,0 +1,44 @@
+#header {
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    border: solid 1px black;
+    align-items: center;
+    padding-right: 20px;
+}
+
+#searchBar {
+    height: 30px;
+    width: 300px;
+    border: solid 1px black;
+    padding-left: 10px;
+}
+
+#content {
+    display: flex;
+}
+
+#leftPanel {
+    flex: 2;
+}
+#rightPanel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+    border: solid 1px black;
+    padding: 10px;
+    align-items: center;
+}
+
+.image {
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+}
+table, th, td {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
