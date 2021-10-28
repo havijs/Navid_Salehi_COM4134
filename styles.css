@@ -18,6 +18,12 @@
     display: flex;
 }
 
+#tableOfContent {
+    border: solid 1px black;
+    width: fit-content;
+    padding-right: 20px;
+}
+
 #leftPanel {
     flex: 2;
 }
@@ -41,4 +47,20 @@ table {
 table, th, td {
     border: solid 1px black;
     border-collapse: collapse;
+}
+
+#video {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    display: flex;
+    border: solid 1px black;
+    margin-top: 10px;
+}
+
+#footer>p {
+    margin: 10px;
 }
