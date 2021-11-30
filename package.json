@@ -1,0 +1,25 @@
+{
+  "name": "navid_salehi_com4134",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+      "build": "esbuild src/app.ts --bundle --minify --sourcemap --outfile=public/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvdsalehi/Navid_Salehi_COM4134.git"
+  },
+  "author": "Navid Salehi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nvdsalehi/Navid_Salehi_COM4134/issues"
+  },
+  "homepage": "https://github.com/nvdsalehi/Navid_Salehi_COM4134#readme",
+  "dependencies": {
+    "esbuild": "^0.14.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
