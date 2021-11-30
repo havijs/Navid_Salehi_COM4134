@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/darkmode.ts", "../src/app.ts"],
+  "sourcesContent": ["const darkmode = () => {\n    const darkmodeButton = document.getElementById('darkmode-btn');\n    const body = document.getElementsByTagName('body')[0];\n    if(darkmodeButton && darkmodeButton.dataset['dark'] === 'false') {\n        body.style.backgroundColor = '#404040';\n        body.style.color = 'white';\n        darkmodeButton.dataset['dark'] = 'true';\n        darkmodeButton.innerText = 'Light Mode';\n    }\n    else if(darkmodeButton && darkmodeButton.dataset['dark'] === 'true') {\n        body.style.backgroundColor = 'white';\n        body.style.color = 'black';\n        darkmodeButton.dataset['dark'] = 'false';\n        darkmodeButton.innerText = 'Dark Mode';\n    }\n}\n\nexport default darkmode;\n", "import darkmode from './darkmode';\n\ndeclare global {\n    interface Window { darkmode: any; }\n}\n\nwindow.darkmode = darkmode;\n"],
+  "mappings": "MAAA,GAAM,GAAW,IAAM,CACnB,GAAM,GAAiB,SAAS,eAAe,gBACzC,EAAO,SAAS,qBAAqB,QAAQ,GACnD,AAAG,GAAkB,EAAe,QAAQ,OAAY,QACpD,GAAK,MAAM,gBAAkB,UAC7B,EAAK,MAAM,MAAQ,QACnB,EAAe,QAAQ,KAAU,OACjC,EAAe,UAAY,cAEvB,GAAkB,EAAe,QAAQ,OAAY,QACzD,GAAK,MAAM,gBAAkB,QAC7B,EAAK,MAAM,MAAQ,QACnB,EAAe,QAAQ,KAAU,QACjC,EAAe,UAAY,cAI5B,EAAQ,ECXf,OAAO,SAAW",
+  "names": []
+}
